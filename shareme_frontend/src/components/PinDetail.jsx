@@ -50,9 +50,9 @@ const PinDetail = () => {
         ])
         .commit()
         .then(() => {
-          fetchPinDetails();
           setComment("");
           setAddingComment(false);
+          fetchPinDetails();
         });
     }
   };
