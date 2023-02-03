@@ -22,7 +22,7 @@ const UserProfile = () => {
   const navigate = useNavigate();
   const { userId } = useParams();
 
-  const { user: activeUser } = useAuthStore();
+  const { user: activeUser, removeUser } = useAuthStore();
 
   useEffect(() => {
     const query = userQuery(userId);
